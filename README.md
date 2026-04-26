@@ -1,53 +1,27 @@
-# 💰 Personal Budget Tracker (Desktop App)
+# Personal Budget Tracker
 
-A simple, locally runnable desktop application for tracking expenses, managing category budgets, and visualizing spending trends.
+A local desktop expense and monthly category budget tracker built with PySide6, SQLite, and Matplotlib.
 
----
+## Run
 
-## 📌 Overview
+Use Python 3.12 or newer with the project dependencies installed:
 
-This project is a first-version desktop budget tracker built using:
+```powershell
+python -m pip install -e ".[dev]"
+python -m budget_tracker
+```
 
-- **PySide6 (Qt for Python)** for the GUI  
-- **SQLite** for local data storage  
-- **Matplotlib** for charts and visualizations  
+In this Codex workspace, the bundled Python runtime already has the dependencies installed:
 
-The app allows you to:
-- Record and manage expenses
-- Organize spending by category
-- Set monthly budgets per category
-- Visualize spending patterns
+```powershell
+& 'C:\Users\Jamie\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -m budget_tracker
+```
 
-> ⚠️ Note: This is a local-only application (no cloud sync or accounts).
+The app stores its local database at `data/budget_tracker.db`.
 
----
+## Test
 
-## ✨ Features
-
-### 🧾 Expense Management
-- Add, edit, and delete expenses
-- Fields include:
-  - Date
-  - Category
-  - Description
-  - Amount
-  - Payment Method
-- Filter by:
-  - Month
-  - Category
-
-### 📊 Budget Tracking
-- Set **monthly budgets per category**
-- View:
-  - Budgeted amount
-  - Amount spent
-  - Remaining balance
-- Clear indication when a category is **over budget**
-
-### 📈 Data Visualization
-- Monthly spending chart by category using Matplotlib
-
----
-
-## 🗂️ Project Structure (Planned)
+```powershell
+python -m pytest
+```
 
