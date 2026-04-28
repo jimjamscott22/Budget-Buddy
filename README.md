@@ -11,6 +11,10 @@ python -m pip install -e ".[dev]"
 python -m budget_tracker
 ```
 
+```bash
+uv run python -m budget_tracker
+```
+
 In this Codex workspace, the bundled Python runtime already has the dependencies installed:
 
 ```powershell
